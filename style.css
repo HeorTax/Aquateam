@@ -39,13 +39,14 @@ body {
     align-items: center;
 }
 .logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo img {
+    height: 50px;
+    width: auto;  
 }
 .nav-links {
     display: flex;
