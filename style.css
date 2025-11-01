@@ -39,6 +39,9 @@ body {
     align-items: center;
 }
 .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary); 
     text-decoration: none;
     display: flex;
     align-items: center;
