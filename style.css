@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-/* DÜZELTME 1: İsteğiniz üzerine ESKİ BÜYÜK navbar kuralı GELDİ */
+/* İSTEĞİNİZ: Eski büyük navbar (padding: 1.5rem) */
 .navbar {
     position: fixed;
     top: 0;
@@ -41,24 +41,24 @@ body {
     align-items: center;
 }
 
-/* DÜZELTME 2: İsteğiniz üzerine ESKİ BÜYÜK MAVİ logo kuralı GELDİ */
+/* İSTEĞİNİZ: Eski büyük, mavi logo yazısı (font-size: 2rem) */
 .logo {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary);
-    text-decoration: none; /* alt çizgiyi kaldırır */
+    color: var(--primary); /* Mavi renk */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-/* YENİ KURAL: Logoyu büyük navbar'a sığdırmak için */
+/* DÜZELTME: Logo resmini büyük navbar'a sığdırır */
 .logo img {
     height: 50px;
     width: auto;  
 }
 
-/* YENİ KURAL: <span> içindeki alt çizgiyi de %100 kaldırır */
+/* DÜZELTME: <span> etiketinin de altının çizili olmamasını sağlar */
 .logo span {
     text-decoration: none;
 }
@@ -104,7 +104,7 @@ body {
     cursor: pointer;
 }
 
-/* DÜZELTME 3: Sitenin üstünün kesilmemesi için margin'i 101px yaptık */
+/* DÜZELTME: Sitenin üstünün kesilmemesi için margin'i 101px yaptık */
 .hero {
     height: 100vh;
     background-image: url('https://static.photos/technology/1920x1080/1');
@@ -116,7 +116,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin-top: 101px; /* 80px yerine 101px */
+    margin-top: 101px; /* Eski 80px yerine */
 }
 .hero-overlay {
     position: absolute;
@@ -312,7 +312,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
+  t width: 100%;
     text-align: center;
 }
 .control-description {
@@ -326,9 +326,7 @@ body {
     background-color: var(--dark);
 }
 
-/* DÜZELTME 4: Eski koddaki "yamukluk" hatası tekrar düzeltildi.
-   BU KURAL SİLİNDİ (Çünkü aşağıda doğrusu var)
-*/
+/* DÜZELTME ("Yamukluk" hatası): Bu hatalı kural SİLİNDİ */
 /*
 .innovation-container {
     display: flex;
@@ -432,13 +430,13 @@ body {
     background-color: var(--dark);
 }
 
-/* DÜZELTME 4 (Devamı): "Yamukluk" hatasını çözen doğru kural bu. */
+/* DÜZELTME: "Yamukluk" hatasını çözen doğru kural bu. */
 .innovation-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+  S margin: 0 auto;
 }
 
 .innovation-card {
@@ -516,7 +514,7 @@ display: none;
         display: block;
     }
 
-  _ .hero h1 {
+    .hero h1 {
         font-size: 2.5rem;
     }
 
