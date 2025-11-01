@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--dark);
-    padding: 1rem 0;
+    padding: 1rem 0; /* <-- DÜZELTME: Sığması için 1.5rem yerine 1rem (küçük) kalacak */
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid var(--primary);
@@ -39,22 +39,26 @@ body {
     align-items: center;
 }
 .logo {
-    font-size: 1.5rem; 
+    font-size: 2rem; /* <-- DÜZELTME: Yazı boyutu isteğiniz üzerine 2rem'e (BÜYÜK) döndü */
     font-weight: 700;
-    color: var(--light); /* <-- DÜZELTME 1: Renk mavi'den BEYAZ'a (light) çevrildi */
-    text-decoration: none; /* <a> etiketinin alt çizgisini kaldırır */
+    color: var(--light); /* <-- DÜZELTME: Renk mavi'den BEYAZ'a (light) çevrildi */
+    text-decoration: none; /* <-- DÜZELTME: Alt çizgiyi kaldırır */
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
+/* YENİ KURAL EKLENDİ (logo.png için) */
 .logo img {
-    height: 40px;
+    height: 40px; /* <-- DÜZELTME: Resim 40px (küçük) kalacak */
     width: auto;  
 }
-/* YENİ KURAL: <span> içindeki metnin de alt çizgisini kaldırır */
+
+/* YENİ KURAL EKLENDİ (span içindeki alt çizgiyi de kaldırmak için) */
 .logo span {
-    text-decoration: none; /* <-- DÜZELTME 2: <span>'in alt çizgisini kaldırır */
+    text-decoration: none;
 }
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -106,7 +110,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin-top: 75px; 
+    margin-top: 75px; /* <-- DÜZELTME: Yeni navbar yüksekliğine göre (75px) ayarlandı */
 }
 .hero-overlay {
     position: absolute;
@@ -316,6 +320,19 @@ body {
     background-color: var(--dark);
 }
 
+/* DÜZELTME: "Yamukluk" hatasına neden olan
+   BU KURAL SİLİNDİ (Çünkü aşağıda doğrusu var)
+*/
+/*
+.innovation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+*/
+
 .innovation-card {
     background-color: var(--light-dark);
     padding: 2rem;
@@ -409,6 +426,7 @@ body {
     background-color: var(--dark);
 }
 
+/* DÜZELTME: "Yamukluk" hatasını çözen doğru kural bu */
 .innovation-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -482,7 +500,6 @@ display: none;
         align-items: center;
         padding: 1rem 0;
         gap: 1rem;
-        border-top: 1px solid var(--primary); 
     }
 
     .nav-links.active {
