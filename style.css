@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--dark);
-    padding: 1rem 0; /* <-- DÜZELTME: Sığması için 1.5rem yerine 1rem (küçük) kalacak */
+    padding: 1.5rem 0; /* <-- DÜZELTME 1: Navbar'ı isteğiniz üzerine BÜYÜTTÜK (1rem -> 1.5rem) */
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid var(--primary);
@@ -39,26 +39,21 @@ body {
     align-items: center;
 }
 .logo {
-    font-size: 2rem; /* <-- DÜZELTME: Yazı boyutu isteğiniz üzerine 2rem'e (BÜYÜK) döndü */
+    font-size: 2rem; /* <-- DÜZELTME 2: Yazı tipini isteğiniz üzerine BÜYÜTTÜK (1.5rem -> 2rem) */
     font-weight: 700;
-    color: var(--light); /* <-- DÜZELTME: Renk mavi'den BEYAZ'a (light) çevrildi */
-    text-decoration: none; /* <-- DÜZELTME: Alt çizgiyi kaldırır */
+    color: var(--light); /* <-- DÜZELTME 3: Rengi BEYAZ yaptık (light) */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-
-/* YENİ KURAL EKLENDİ (logo.png için) */
 .logo img {
-    height: 40px; /* <-- DÜZELTME: Resim 40px (küçük) kalacak */
+    height: 50px; /* <-- DÜZELTME 4: Logoyu büyük navbar'a uyacak şekilde BÜYÜTTÜK (40px -> 50px) */
     width: auto;  
 }
-
-/* YENİ KURAL EKLENDİ (span içindeki alt çizgiyi de kaldırmak için) */
 .logo span {
-    text-decoration: none;
+    text-decoration: none; /* <span> etiketinin de altının çizili olmamasını sağlar */
 }
-
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -110,7 +105,8 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin-top: 75px; /* <-- DÜZELTME: Yeni navbar yüksekliğine göre (75px) ayarlandı */
+    /* (padding 1.5rem*2 + logo 50px + border 3px = ~101px) */
+    margin-top: 101px; /* <-- DÜZELTME 5: Sitenin üstünün kesilmemesi için (75px -> 101px) */
 }
 .hero-overlay {
     position: absolute;
@@ -320,7 +316,7 @@ body {
     background-color: var(--dark);
 }
 
-/* DÜZELTME: "Yamukluk" hatasına neden olan
+/* DÜZELTME 6: Eski koddaki "yamukluk" hatası tekrar düzeltildi.
    BU KURAL SİLİNDİ (Çünkü aşağıda doğrusu var)
 */
 /*
@@ -426,7 +422,7 @@ body {
     background-color: var(--dark);
 }
 
-/* DÜZELTME: "Yamukluk" hatasını çözen doğru kural bu */
+/* DÜZELTME 6 (Devamı): "Yamukluk" hatasını çözen doğru kural bu. */
 .innovation-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
