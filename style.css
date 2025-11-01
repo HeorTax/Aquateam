@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--dark);
-    padding: 1.5rem 0;
+    padding: 1rem 0; /* <-- DÜZELTME 1: Dikey boşluğu azalttık (1.5rem -> 1rem) */
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid var(--primary);
@@ -39,7 +39,7 @@ body {
     align-items: center;
 }
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem; /* <-- DÜZELTME 2: Logo yazısını küçülttük (2rem -> 1.5rem) */
     font-weight: 700;
     color: var(--primary); 
     text-decoration: none;
@@ -48,7 +48,7 @@ body {
     gap: 0.5rem;
 }
 .logo img {
-    height: 50px;
+    height: 40px; /* <-- DÜZELTME 3: Logo resmini küçülttük (50px -> 40px) */
     width: auto;  
 }
 .nav-links {
@@ -102,7 +102,8 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin-top: 80px;
+    /* Yeni navbar yüksekliğine göre (40px logo + 32px padding + 3px border = 75px) */
+    margin-top: 75px; /* <-- DÜZELTME 4: Kesilmeyi önlemek için (80px -> 75px) */
 }
 .hero-overlay {
     position: absolute;
@@ -470,7 +471,7 @@ body {
 .nav-links {
 display: none;
         position: absolute;
-        top: 100%;
+        top: 100%; /* Düzeltme: Navbar'ın tam altına */
         left: 0;
         width: 100%;
         background-color: var(--dark);
@@ -478,6 +479,7 @@ display: none;
         align-items: center;
         padding: 1rem 0;
         gap: 1rem;
+        border-top: 1px solid var(--primary); /* Estetik ekleme */
     }
 
     .nav-links.active {
