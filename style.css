@@ -19,8 +19,6 @@ body {
     color: var(--light);
     line-height: 1.6;
 }
-
-/* 1. DÜZELTME: İsteğiniz üzerine ESKİ BÜYÜK navbar kuralı GELDİ */
 .navbar {
     position: fixed;
     top: 0;
@@ -40,30 +38,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-/* 2. DÜZELTME: İsteğiniz üzerine ESKİ BÜYÜK MAVİ logo kuralı GELDİ */
-/* (ve alt çizgi kaldırıldı) */
 .logo {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary);
-    text-decoration: none; /* <a> etiketinin alt çizgisini kaldırır */
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-
-/* 3. DÜZELTME: (YENİ KURAL) Logoyu (img) büyük navbar'a sığdırır */
-.logo img {
-    height: 50px; /* 1.5rem padding'e uygun boyut */
-    width: auto;  
-}
-
-/* 4. DÜZELTME: (YENİ KURAL) Logo yazısının (span) alt çizgisini %100 kaldırır */
-.logo span {
-    text-decoration: none;
-}
-
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -104,8 +87,6 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
-/* 5. DÜZELTME: Sitenin üstünün kesilmemesi için margin'i 101px yaptık */
 .hero {
     height: 100vh;
     background-image: url('https://static.photos/technology/1920x1080/1');
@@ -117,7 +98,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin-top: 101px; /* 80px yerine 101px */
+    margin-top: 80px;
 }
 .hero-overlay {
     position: absolute;
@@ -326,11 +307,6 @@ body {
     padding: 5rem 0;
     background-color: var(--dark);
 }
-
-/* 6. DÜZELTME: Eski koddaki "yamukluk" (hizalama) hatası düzeltildi.
-   BU HATALI KURAL (display: flex) SİLİNDİ.
-*/
-/*
 .innovation-container {
     display: flex;
     flex-direction: column;
@@ -338,8 +314,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-*/
-
 .innovation-card {
     background-color: var(--light-dark);
     padding: 2rem;
@@ -433,7 +407,6 @@ body {
     background-color: var(--dark);
 }
 
-/* 6. DÜZELTME (Devamı): "Yamukluk" hatasını çözen DOĞRU KURAL (display: grid) bu. */
 .innovation-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
