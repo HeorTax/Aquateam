@@ -41,7 +41,6 @@ body {
     align-items: center;
 }
 
-/* İSTEDİĞİNİZ BÜYÜK MAVİ LOGO (DOKUNULMADI) */
 .logo {
     font-size: 2rem;
     font-weight: 700;
@@ -92,7 +91,6 @@ body {
     cursor: pointer;
 }
 
-/* 1. DÜZELTME: Navbar'ın siteyi kesmemesi için margin 101px olarak güncellendi */
 .hero {
     height: 100vh;
     background-image: url('https://static.photos/technology/1920x1080/1');
@@ -104,7 +102,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin-top: 101px; /* 80px yerine 101px */
+    margin-top: 101px; 
 }
 .hero-overlay {
     position: absolute;
@@ -313,17 +311,6 @@ body {
     padding: 5rem 0;
     background-color: var(--dark);
 }
-
-/* 2. DÜZELTME: "Yamukluk" hatasına neden olan bu hatalı kural SİLİNDİ. */
-/*
-.innovation-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-*/
 
 .innovation-card {
     background-color: var(--light-dark);
